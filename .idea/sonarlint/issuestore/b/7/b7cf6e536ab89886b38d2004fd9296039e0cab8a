@@ -1,0 +1,15 @@
+
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ğÿä—8ÿªåÀİ.
+‰
+java:S1989"lHandle the following exception that could be thrown by "setCharacterEncoding": UnsupportedEncodingException.(±Œ©À8îÙ§Áİ.
+£
+java:S1186#"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(–àËµÿÿÿÿÿ8ÿªåÀİ.
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹Â·Š8¦ÂåÀİ.
+W
+java:S1854":Remove this useless assignment to local variable "reader".(–Ä®8Ëõ¸Áİ.
+m
+java:S1989"PHandle the following exception that could be thrown by "getReader": IOException.(–Ä®8Ëõ¸Áİ.
+H
+java:S1481"+Remove this unused "reader" local variable.(–Ä®8Ëõ¸Áİ.
