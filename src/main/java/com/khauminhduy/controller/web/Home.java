@@ -17,14 +17,8 @@ public class Home extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        try {
-            CategoryDAO categoryDAO = new CategoryDAO();
-            req.setAttribute("categories", categoryDAO.findAll());
-            RequestDispatcher dispatcher = req.getRequestDispatcher("view/web/home.jsp");
-            dispatcher.forward(req, resp);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        RequestDispatcher dispatcher = req.getRequestDispatcher("view/web/home.jsp");
+        dispatcher.forward(req, resp);
     }
 
 }
