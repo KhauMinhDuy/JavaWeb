@@ -1,4 +1,4 @@
-<%@ include file="/common/taglib.jsp"%>
+<%@ include file="/common/taglib.jsp" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="en">
@@ -1202,7 +1202,8 @@
 
                                             <div class="itemdiv dialogdiv">
                                                 <div class="user">
-                                                    <img alt="Bob's Avatar" src="${pageContext.request.contextPath}/template/admin/images/avatars/user.jpg"/>
+                                                    <img alt="Bob's Avatar"
+                                                         src="${pageContext.request.contextPath}/template/admin/images/avatars/user.jpg"/>
                                                 </div>
 
                                                 <div class="body">

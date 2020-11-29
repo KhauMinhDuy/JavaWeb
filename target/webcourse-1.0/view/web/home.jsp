@@ -7,14 +7,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet"
-          href="${pageContext.request.contextPath}/template/web/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/template/web/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/template/web/css/shop-homepage.css">
     <title>Home</title>
 </head>
 <body>
-<!-- Page Content -->
 <div class="row">
+
     <div class="col-lg-3">
         <h1 class="my-4">Shop Name</h1>
         <div class="list-group">
@@ -23,7 +22,6 @@
             <a href="#" class="list-group-item">Category 3</a>
         </div>
     </div>
-    <!-- /.col-lg-3 -->
     <div class="col-lg-9">
         <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -156,16 +154,10 @@
             </div>
 
         </div>
-        <!-- /.row -->
-
     </div>
-    <!-- /.col-lg-9 -->
-
 </div>
-<!-- /.row -->
 
 <script src="${pageContext.request.contextPath}/template/web/vendor/jquery/jquery.min.js"></script>
 <script src="${pageContext.request.contextPath}/template/web/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- /.container -->
 </body>
 </html>

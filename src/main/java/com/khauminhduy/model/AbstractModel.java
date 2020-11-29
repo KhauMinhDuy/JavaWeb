@@ -17,6 +17,16 @@ public class AbstractModel<T> {
     private int visiblePages;
     private int totalPages;
 
+    public AbstractModel() {
+    }
+
+    public AbstractModel(Timestamp createdDate, Timestamp modifiedDate, Timestamp createdBy, Timestamp modifiedBy) {
+        this.createdDate = createdDate;
+        this.modifiedDate = modifiedDate;
+        this.createdBy = createdBy;
+        this.modifiedBy = modifiedBy;
+    }
+
     public long getId() {
         return id;
     }
@@ -89,4 +99,18 @@ public class AbstractModel<T> {
         this.totalPages = totalPages;
     }
 
+    @Override
+    public String toString() {
+        return "AbstractModel{" +
+                "id=" + id +
+                ", createdDate=" + createdDate +
+                ", modifiedDate=" + modifiedDate +
+                ", createdBy=" + createdBy +
+                ", modifiedBy=" + modifiedBy +
+                ", listResult=" + listResult +
+                ", startPage=" + startPage +
+                ", visiblePages=" + visiblePages +
+                ", totalPages=" + totalPages +
+                '}';
+    }
 }

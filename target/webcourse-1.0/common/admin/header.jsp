@@ -182,7 +182,8 @@
                             <ul class="dropdown-menu dropdown-navbar">
                                 <li>
                                     <a href="#" class="clearfix">
-                                        <img src="${pageContext.request.contextPath}/template/admin/images/avatars/avatar.png" class="msg-photo"
+                                        <img src="${pageContext.request.contextPath}/template/admin/images/avatars/avatar.png"
+                                             class="msg-photo"
                                              alt="Alex's Avatar"/>
                                         <span class="msg-body">
 													<span class="msg-title">
@@ -200,7 +201,8 @@
 
                                 <li>
                                     <a href="#" class="clearfix">
-                                        <img src="${pageContext.request.contextPath}/template/admin/images/avatars/avatar3.png" class="msg-photo"
+                                        <img src="${pageContext.request.contextPath}/template/admin/images/avatars/avatar3.png"
+                                             class="msg-photo"
                                              alt="Susan's Avatar"/>
                                         <span class="msg-body">
 													<span class="msg-title">
@@ -218,7 +220,8 @@
 
                                 <li>
                                     <a href="#" class="clearfix">
-                                        <img src="${pageContext.request.contextPath}/template/admin/images/avatars/avatar4.png" class="msg-photo"
+                                        <img src="${pageContext.request.contextPath}/template/admin/images/avatars/avatar4.png"
+                                             class="msg-photo"
                                              alt="Bob's Avatar"/>
                                         <span class="msg-body">
 													<span class="msg-title">
@@ -236,7 +239,8 @@
 
                                 <li>
                                     <a href="#" class="clearfix">
-                                        <img src="${pageContext.request.contextPath}/template/admin/images/avatars/avatar2.png" class="msg-photo"
+                                        <img src="${pageContext.request.contextPath}/template/admin/images/avatars/avatar2.png"
+                                             class="msg-photo"
                                              alt="Kate's Avatar"/>
                                         <span class="msg-body">
 													<span class="msg-title">
@@ -254,7 +258,8 @@
 
                                 <li>
                                     <a href="#" class="clearfix">
-                                        <img src="${pageContext.request.contextPath}/template/admin/images/avatars/avatar5.png" class="msg-photo"
+                                        <img src="${pageContext.request.contextPath}/template/admin/images/avatars/avatar5.png"
+                                             class="msg-photo"
                                              alt="Fred's Avatar"/>
                                         <span class="msg-body">
 													<span class="msg-title">
@@ -283,7 +288,9 @@
 
                 <li class="light-blue dropdown-modal">
                     <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                        <img class="nav-user-photo" src=${pageContext.request.contextPath}/template/admin/images/avatars/user.jpg" alt="Jason's Photo"/>
+                        <img class="nav-user-photo"
+                             src=${pageContext.request.contextPath}/template/admin/images/avatars/user.jpg"
+                             alt="Jason's Photo"/>
                         <span class="user-info">
 									<small>Welcome,</small>
 									Jason

@@ -49,9 +49,9 @@
 
             <ul class="submenu">
                 <li class="">
-                    <a href="${pageContext.request.contextPath}/admin-new" >
+                    <a href="${pageContext.request.contextPath}/admin-new">
                         <em class="menu-icon fa fa-caret-right"></em>
-                            Danh sach bai viet
+                        Danh sach bai viet
                         <strong class="arrow fa fa-angle-down"></strong>
                     </a>
                     <strong class="arrow"></strong>
@@ -62,7 +62,7 @@
 
     <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
         <em id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state"
-           data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right">
+            data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right">
         </em>
     </div>
 </div>

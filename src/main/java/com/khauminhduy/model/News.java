@@ -1,5 +1,8 @@
 package com.khauminhduy.model;
 
+
+import java.sql.Timestamp;
+
 public class News extends AbstractModel<News> {
 
     private String title;
@@ -7,6 +10,20 @@ public class News extends AbstractModel<News> {
     private String shortDescription;
     private String content;
     private long categoryId;
+
+    public News() {
+    }
+
+    public News(Timestamp createdDate, Timestamp modifiedDate, Timestamp createdBy, Timestamp modifiedBy, String title, String thumbnail, String shortDescription, String content, long categoryId) {
+
+        super(createdDate, modifiedDate, createdBy, modifiedBy);
+        this.title = title;
+        this.thumbnail = thumbnail;
+        this.shortDescription = shortDescription;
+        this.content = content;
+        this.categoryId = categoryId;
+    }
+
 
     public String getTitle() {
         return title;
@@ -48,4 +65,14 @@ public class News extends AbstractModel<News> {
         this.categoryId = categoryId;
     }
 
+    @Override
+    public String toString() {
+        return "News{" +
+                "title='" + title + '\'' +
+                ", thumbnail='" + thumbnail + '\'' +
+                ", shortDescription='" + shortDescription + '\'' +
+                ", content='" + content + '\'' +
+                ", categoryId=" + categoryId +
+                "} " + super.toString();
+    }
 }

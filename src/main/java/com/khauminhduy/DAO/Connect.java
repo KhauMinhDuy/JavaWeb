@@ -1,4 +1,4 @@
-package com.khauminhduy.DAO;
+package com.khauminhduy.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -66,7 +66,7 @@
             visiblePages: visiblePages,
             startPage: startPage,
             onPageClick: function (event, page) {
-                if(startPage != page) {
+                if (startPage != page) {
                     $('#startPage').val(page);
                     $('#visiblePages').val(visiblePages);
                     $('#formSubmit').submit();
