@@ -22,6 +22,21 @@ public class NewService implements INewService {
 
     @Override
     public boolean save(News news) {
-        return false;
+        return newsDao.save(news);
+    }
+
+    @Override
+    public News findOne(News news) {
+        return newsDao.findOne(news);
+    }
+
+    @Override
+    public boolean update(News news) {
+        return newsDao.update(news);
+    }
+
+    @Override
+    public boolean delete(News news) {
+        return newsDao.delete(news);
     }
 }

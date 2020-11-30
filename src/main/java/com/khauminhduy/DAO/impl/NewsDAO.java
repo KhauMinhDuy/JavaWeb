@@ -53,4 +53,60 @@ public class NewsDAO implements INewsDao {
         }
         return false;
     }
+
+    @Override
+    public News findOne(News news) {
+        try (PreparedStatement statement = getConnection().prepareStatement("SELECT * FROM news WHERE categoryid = ? AND title = ?");){
+            statement.setLong(1, news.getCategoryId());
+            statement.setString(2, news.getTitle());
+            try (ResultSet resultSet = statement.executeQuery()) {
+                if (resultSet.next()) {
+                    News newsTemp = new News();
+                    newsTemp.setId(resultSet.getLong("id"));
+                    newsTemp.setTitle(resultSet.getString("title"));
+                    newsTemp.setThumbnail(resultSet.getString("thumbnail"));
+                    newsTemp.setShortDescription(resultSet.getString("shortdescription"));
+                    newsTemp.setContent(resultSet.getString("content"));
+                    return newsTemp;
+                }
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    public boolean update(News news) {
+        try (PreparedStatement statement = getConnection().prepareStatement("UPDATE news SET title = ?, content = ? WHERE id = ?")){
+            statement.setString(1, news.getTitle());
+            statement.setString(2, news.getContent());
+            statement.setLong(3, news.getId());
+            int i = statement.executeUpdate();
+            if(i != 0) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return false;
+    }
+
+    @Override
+    public boolean delete(News news) {
+        try (PreparedStatement statement = getConnection().prepareStatement("DELETE FROM news WHERE id = ?")){
+            statement.setLong(1, news.getId());
+            int i = statement.executeUpdate();
+            if(i != 0) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return false;
+    }
 }
