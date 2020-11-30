@@ -9,7 +9,7 @@ import java.util.List;
 
 public class CategoryService implements ICategoryService {
 
-    private final ICategoryDao categoryDao;
+    private ICategoryDao categoryDao;
 
     public CategoryService() {
         this.categoryDao = new CategoryDAO();

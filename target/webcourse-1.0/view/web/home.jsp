@@ -12,6 +12,13 @@
     <title>Home</title>
 </head>
 <body>
+<c:forEach var="item" items="${categoryList}">
+    <h1><c:out value="${item.name}" /></h1>
+</c:forEach>
+
+<c:forEach var="items" items="${newService}">
+    <h2><c:out value="${items.title}" /></h2>
+</c:forEach>
 <div class="row">
 
     <div class="col-lg-3">

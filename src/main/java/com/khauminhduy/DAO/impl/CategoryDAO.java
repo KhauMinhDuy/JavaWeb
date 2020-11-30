@@ -17,7 +17,7 @@ public class CategoryDAO implements ICategoryDao {
     @Override
     public List<Category> findAll() {
         List<Category> categories = new ArrayList<>();
-        try (PreparedStatement statement = getConnection().prepareStatement("select * from category;")) {
+        try (PreparedStatement statement = getConnection().prepareStatement("select * from category;");){
             try (ResultSet resultSet = statement.executeQuery()) {
                 while (resultSet.next()) {
                     String name = resultSet.getString("name");
@@ -26,8 +26,8 @@ public class CategoryDAO implements ICategoryDao {
                 }
             }
             return categories;
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
         return Collections.emptyList();
     }

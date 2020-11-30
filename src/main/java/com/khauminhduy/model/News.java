@@ -14,8 +14,7 @@ public class News extends AbstractModel<News> {
     public News() {
     }
 
-    public News(Timestamp createdDate, Timestamp modifiedDate, Timestamp createdBy, Timestamp modifiedBy, String title, String thumbnail, String shortDescription, String content, long categoryId) {
-
+    public News(String title, String thumbnail, String shortDescription, String content, long categoryId, Timestamp createdDate, Timestamp modifiedDate, Timestamp createdBy, Timestamp modifiedBy) {
         super(createdDate, modifiedDate, createdBy, modifiedBy);
         this.title = title;
         this.thumbnail = thumbnail;

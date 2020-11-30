@@ -36,12 +36,46 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <c:forEach var="list" items="${model.listResult}">
-                                            <tr>
-                                                <td>${list.title}</td>
-                                                <td>${list.shortDescription}</td>
-                                            </tr>
-                                        </c:forEach>
+                                        <tr>
+                                            <td>abc</td>
+                                            <td>xyz</td>
+                                        </tr>
+                                        <tr>
+                                            <td>abc</td>
+                                            <td>xyz</td>
+                                        </tr>
+                                        <tr>
+                                            <td>abc</td>
+                                            <td>xyz</td>
+                                        </tr>
+                                        <tr>
+                                            <td>abc</td>
+                                            <td>xyz</td>
+                                        </tr>
+                                        <tr>
+                                            <td>abc</td>
+                                            <td>xyz</td>
+                                        </tr>
+                                        <tr>
+                                            <td>abc</td>
+                                            <td>xyz</td>
+                                        </tr>
+                                        <tr>
+                                            <td>abc</td>
+                                            <td>xyz</td>
+                                        </tr>
+                                        <tr>
+                                            <td>abc</td>
+                                            <td>xyz</td>
+                                        </tr>
+                                        <tr>
+                                            <td>abc</td>
+                                            <td>xyz</td>
+                                        </tr>
+                                        <tr>
+                                            <td>abc</td>
+                                            <td>xyz</td>
+                                        </tr>
                                         </tbody>
                                     </table>
                                     <ul class="pagination" id="pagination"></ul>
@@ -57,20 +91,14 @@
     </form>
 </div>
 <script>
-    let startPage = ${model.startPage};
-    let totalPages = ${model.totalPages};
-    let visiblePages = 5;
+
     $(function () {
         window.pagObj = $('#pagination').twbsPagination({
-            totalPages: totalPages,
-            visiblePages: visiblePages,
-            startPage: startPage,
+            totalPages: 10,
+            visiblePages: 5,
+            startPage: 1,
             onPageClick: function (event, page) {
-                if (startPage != page) {
-                    $('#startPage').val(page);
-                    $('#visiblePages').val(visiblePages);
-                    $('#formSubmit').submit();
-                }
+
             }
         });
     });
