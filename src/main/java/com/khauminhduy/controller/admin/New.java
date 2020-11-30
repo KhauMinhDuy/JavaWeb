@@ -1,8 +1,5 @@
 package com.khauminhduy.controller.admin;
 
-import com.khauminhduy.dao.impl.NewsDAO;
-import com.khauminhduy.model.News;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,6 +10,8 @@ import java.io.IOException;
 
 @WebServlet(urlPatterns = {"/admin-new"})
 public class New extends HttpServlet {
+
+
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
